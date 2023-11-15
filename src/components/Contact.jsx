@@ -2,7 +2,7 @@ import Socials from "./Socials.jsx";
 
 const Contact = () => {
     return (
-        <div id="contact" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
+        <div id="contact" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 border">
             <h1 className="py-4 text-4xl font-bold text-center text-black">
                 Contact
             </h1>
@@ -45,11 +45,16 @@ const Contact = () => {
                         </div>
                         <div>
                             <label className="uppercase text-sm py-2">Message</label>
-                            <textarea rows="10" name="name"></textarea>
+                        </div>
+                        <div className="py-2">
+                            <textarea rows="5" name="name" className="block w-full border-2 rounded-lg border-gray-300"
+                                placeholder=" Write your thought here..."></textarea>
                         </div>
                     </div>
-                    <div className="bottom-[75%] flex-row">
+                    <div className="relative">
+                    <div className="absolute bottom-0 right-0">
                         <Socials />
+                    </div>
                     </div>
                 </div>
             </form>
