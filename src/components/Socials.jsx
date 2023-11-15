@@ -4,7 +4,7 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { BiLogoPinterestAlt } from 'react-icons/bi';
 import { BiLogoYoutube } from 'react-icons/bi';
 
-
+//Social page done by Emil
 const Socials = () => {
     return (
             <div>
