@@ -3,6 +3,8 @@ import Homepage from "./components/Homepage.jsx";
 import Gallery from "./components/Gallery.jsx"
 import About from "./components/About.jsx"
 import Contact from "./components/Contact.jsx"
+import Burial from "./components/Burial.jsx"
+import Ecosystem from "./components/Ecosystem.jsx"
 import { useState } from 'react'
 
 function App() {
@@ -10,8 +12,10 @@ function App() {
         <div>
             <Navbar />
             <Homepage />
-            <Gallery />
             <About />
+            <Gallery />
+            <Burial />
+            <Ecosystem />
             <Contact />
         </div>
     );

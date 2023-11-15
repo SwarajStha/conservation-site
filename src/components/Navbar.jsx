@@ -32,6 +32,15 @@ const Navbar = () => {
                     </a>
 
                     <a
+                        href="#about"
+                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg
+                            bg-shadow-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                    >
+                        <IoIosInformationCircleOutline size={20} />
+                        <span className="pl-4">About</span>
+                    </a>
+
+                    <a
                         href="#gallery"
                         className="w-[75%] flex justify-center items-center rounded-full shadow-lg
                             bg-shadow-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
@@ -59,15 +68,6 @@ const Navbar = () => {
                     </a>
 
                     <a
-                        href="#about"
-                        className="w-[75%] flex justify-center items-center rounded-full shadow-lg
-                            bg-shadow-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
-                    >
-                        <IoIosInformationCircleOutline size={20} />
-                        <span className="pl-4">About</span>
-                    </a>
-
-                    <a
                         href="#contact"
                         className="w-[75%] flex justify-center items-center rounded-full shadow-lg
                             bg-shadow-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
@@ -87,6 +87,14 @@ const Navbar = () => {
                         bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
                     >
                         <AiOutlineHome size={30} />
+                    </a>
+
+                    <a
+                        href="#about"
+                        className="rounded-full shadow-lg 
+                        bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
+                    >
+                        <IoIosInformationCircleOutline size={30} />
                     </a>
 
                     <a
@@ -111,14 +119,6 @@ const Navbar = () => {
                         bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
                     >
                         <GiPlantsAndAnimals size={30} />
-                    </a>
-
-                    <a
-                        href="#about"
-                        className="rounded-full shadow-lg 
-                        bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
-                    >
-                        <IoIosInformationCircleOutline size={30} />
                     </a>
 
                     <a
