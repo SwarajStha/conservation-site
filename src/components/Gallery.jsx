@@ -1,16 +1,22 @@
+// Description: This file contains the Gallery component. This component is used to display image and video tiles.
+// Author: Swaraj Shrestha
+
 import Image from "./image.jsx";
 import Video from "./video.jsx";
 
+// Gallery component definition
 const Gallery = () => {
-
     return (
+        // Container for the gallery content
         <div id="gallery" className="border w-full m-auto md:pl-20 p-4 py-16 items-center">
             <h1 className="py-4 text-4xl font-bold text-center text-black">
                 GALLERY
             </h1>
+            // Video section
             <div className="items-center">
                 <Video />
             </div>
+            // Image sections
             <div>
                 <h2 className="py-4 text-3xl font-bold text-center text-black">
                     Fauna

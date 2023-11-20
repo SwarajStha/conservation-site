@@ -1,3 +1,6 @@
+// Description: This file contains the Navbar component.
+// Author: Swaraj Shrestha
+
 import { AiOutlineHome, AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
 import { GrGallery } from "react-icons/gr";
@@ -5,27 +8,37 @@ import { LuShovel } from "react-icons/lu";
 import { GiPlantsAndAnimals } from "react-icons/gi";
 import { IoIosInformationCircleOutline, IoMdContact } from "react-icons/io";
 
+// Navbar component definition
 const Navbar = () => {
+    // State to control the visibility of the navigation menu
     const [nav, setNav] = useState(false);
+
+    // Handler for click event on the menu icon
     const handleNav = () => {
+        // Toggle the visibility of the navigation menu when the menu icon is clicked
         setNav(!nav);
     };
 
     return (
         <div>
+            // Menu icon
             <AiOutlineMenu
                 onClick={handleNav}
-                className="absolute top-4 left-4 z-[99] md:hidden"
+                className="fixed top-4 left-4 z-[99] md:hidden pointer-events-auto"
             />
+
+            // Navigation menu
             {nav ? (
                 <div
                     className="fixed w-full h-screen bg-white/90 flex
                         flex-col justify-center items-center z-20"
                 >
+                    // Navigation links
                     <a
                         href="#homepage"
                         className="w-[75%] flex justify-center items-center rounded-full shadow-lg
                             bg-shadow-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                        onClick={() => setNav(false)}
                     >
                         <AiOutlineHome size={20} />
                         <span className="pl-4">Home</span>
@@ -35,6 +48,7 @@ const Navbar = () => {
                         href="#about"
                         className="w-[75%] flex justify-center items-center rounded-full shadow-lg
                             bg-shadow-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                        onClick={() => setNav(false)}
                     >
                         <IoIosInformationCircleOutline size={20} />
                         <span className="pl-4">About</span>
@@ -44,6 +58,7 @@ const Navbar = () => {
                         href="#gallery"
                         className="w-[75%] flex justify-center items-center rounded-full shadow-lg
                             bg-shadow-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                        onClick={() => setNav(false)}
                     >
                         <GrGallery size={20} />
                         <span className="pl-4">Gallery</span>
@@ -53,6 +68,7 @@ const Navbar = () => {
                         href="#burial"
                         className="w-[75%] flex justify-center items-center rounded-full shadow-lg
                             bg-shadow-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                        onClick={() => setNav(false)}
                     >
                         <LuShovel size={20} />
                         <span className="pl-4">Burial</span>
@@ -62,6 +78,7 @@ const Navbar = () => {
                         href="#ecosystem"
                         className="w-[75%] flex justify-center items-center rounded-full shadow-lg
                             bg-shadow-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                        onClick={() => setNav(false)}
                     >
                         <GiPlantsAndAnimals size={20} />
                         <span className="pl-4">Ecosystem</span>
@@ -71,16 +88,18 @@ const Navbar = () => {
                         href="#contact"
                         className="w-[75%] flex justify-center items-center rounded-full shadow-lg
                             bg-shadow-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+                        onClick={() => setNav(false)}
                     >
                         <IoMdContact size={20} />
                         <span className="pl-4">Contact</span>
                     </a>
                 </div>
-            ) : (
-                <div></div>
-            )}
+            ) : null}
+
+            // Navigation menu for larger screens                 
             <div className="md:block hidden fixed top-[25%] z-10">
                 <div className="flex flex-col">
+                    // Navigation links for larger screens
                     <a
                         href="#homepage"
                         className="rounded-full shadow-lg 
