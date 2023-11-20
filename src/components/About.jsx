@@ -11,7 +11,6 @@ const About = () => {
       <h1 className="py-4 text-4xl font-bold text-center text-black">
         ABOUT
       </h1>
-      // Description paragraphs
       <p className="text-lg text-gray-700 leading-relaxed text-justify mt-5">
         Nestled in the heart of Halifax, Nova Scotia, the St. Margaret’s Bay Area
         Woodland Conservation Site is a sanctuary of natural beauty and biodiversity.
@@ -50,7 +49,6 @@ const About = () => {
             come.
           </p>
         </div>
-        // Image section
         <div className="flex flex-col">
           <img src={image} alt="Forest" className="w-full h-full object-cover rounded-lg" />
         </div>

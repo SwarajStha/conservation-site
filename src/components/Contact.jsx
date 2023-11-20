@@ -11,10 +11,8 @@ const Contact = () => {
             <h1 className="py-4 text-4xl font-bold text-center text-black">
                 Contact
             </h1>
-            // Contact form
             <form action="" methods="POST" encType="multipart/form-date">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                    // Name field
                     <div className="flex flex-col">
                         <label className="uppercase text-sm py-2">Name</label>
                         <input
@@ -24,7 +22,6 @@ const Contact = () => {
                             placeholder=" Your Name"
                         />
                     </div>
-                    // Phone number field
                     <div className="flex flex-col">
                         <label className="uppercase text-sm py-2">Phone Number</label>
                         <input
@@ -37,7 +34,6 @@ const Contact = () => {
                 </div>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                     <div className="flex flex-col">
-                        // Email field
                         <div>
                             <label className="uppercase text-sm py-2">Email</label>
                             <input
@@ -47,7 +43,6 @@ const Contact = () => {
                                 placeholder=" yourname@example.com"
                             />
                         </div>
-                        // Subject field
                         <div>
                             <label className="uppercase text-sm py-2">Subject</label>
                             <input
@@ -57,7 +52,6 @@ const Contact = () => {
                                 placeholder=" Enter subject"
                             />
                         </div>
-                        // Message body field
                         <div>
                             <label className="uppercase text-sm py-2">Message</label>
                         </div>
@@ -67,10 +61,8 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    // Social media icons
                     <div className="relative">
                         <div className="absolute bottom-0 right-0">
-                            // Social media component
                             <Socials />
                         </div>
                     </div>

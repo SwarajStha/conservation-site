@@ -21,13 +21,12 @@ const Navbar = () => {
 
     return (
         <div>
-            // Menu icon
+
             <AiOutlineMenu
                 onClick={handleNav}
                 className="fixed top-4 left-4 z-[99] md:hidden pointer-events-auto"
             />
 
-            // Navigation menu
             {nav ? (
                 <div
                     className="fixed w-full h-screen bg-white/90 flex
@@ -95,11 +94,9 @@ const Navbar = () => {
                     </a>
                 </div>
             ) : null}
-
-            // Navigation menu for larger screens                 
+            
             <div className="md:block hidden fixed top-[25%] z-10">
                 <div className="flex flex-col">
-                    // Navigation links for larger screens
                     <a
                         href="#homepage"
                         className="rounded-full shadow-lg 

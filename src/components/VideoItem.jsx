@@ -23,7 +23,6 @@ const VideoItem = ({ video, title }) => {
         <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group 
             hover:bg-gradient-to-r from-gray-200 to-[#618c43]" onClick={handleClick}>
 
-            // Video element
             <video src={video} alt="/" className="object-cover rounded-xl group-hover:opacity-10 h-full" autoPlay loop muted />
             <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
                 <h3 className="text-2xl font-bold text-white tracking-wider text-center">
@@ -31,7 +30,6 @@ const VideoItem = ({ video, title }) => {
                 </h3>
             </div>
 
-            // Video player
             {showPlayer && (
                 <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center z-50">
                     <div className="relative w-3/4 h-3/4">

@@ -12,11 +12,9 @@ const Gallery = () => {
             <h1 className="py-4 text-4xl font-bold text-center text-black">
                 GALLERY
             </h1>
-            // Video section
             <div className="items-center">
                 <Video />
             </div>
-            // Image sections
             <div>
                 <h2 className="py-4 text-3xl font-bold text-center text-black">
                     Fauna
