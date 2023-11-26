@@ -1,5 +1,6 @@
-// Description: This file contains the Contact component. This component is used to display the contact form.
 // Author: Swaraj Shrestha
+
+// Description: This file contains the Contact component. This component is used to display the contact form.
 
 import Socials from "./Socials.jsx";
 
@@ -11,9 +12,13 @@ const Contact = () => {
             <h1 className="py-4 text-4xl font-bold text-center text-black">
                 Contact
             </h1>
+
+            {/* Form element with POST method and multipart/form-data encoding type */}
             <form action="" methods="POST" encType="multipart/form-date">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                     <div className="flex flex-col">
+
+                        {/* Input fields for name */}
                         <label className="uppercase text-sm py-2">Name</label>
                         <input
                             className="border-2 rounded-lg p-3 flex border-gray-300"
@@ -23,6 +28,8 @@ const Contact = () => {
                         />
                     </div>
                     <div className="flex flex-col">
+
+                        {/* Input field for phone number */}
                         <label className="uppercase text-sm py-2">Phone Number</label>
                         <input
                             className="border-2 rounded-lg p-3 flex border-gray-300"
@@ -35,6 +42,8 @@ const Contact = () => {
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                     <div className="flex flex-col">
                         <div>
+
+                            {/* Input field for email */}
                             <label className="uppercase text-sm py-2">Email</label>
                             <input
                                 className="border-2 rounded-lg p-3 flex border-gray-300"
@@ -44,6 +53,8 @@ const Contact = () => {
                             />
                         </div>
                         <div>
+
+                            {/* Input field for subject */}
                             <label className="uppercase text-sm py-2">Subject</label>
                             <input
                                 className="border-2 rounded-lg p-3 flex border-gray-300"
@@ -53,6 +64,8 @@ const Contact = () => {
                             />
                         </div>
                         <div>
+
+                            {/* Input field for message */}
                             <label className="uppercase text-sm py-2">Message</label>
                         </div>
                         <div className="py-2">
@@ -62,6 +75,8 @@ const Contact = () => {
                     </div>
 
                     <div className="relative">
+
+                        {/* Container for social media links */}
                         <div className="absolute bottom-0 right-0">
                             <Socials />
                         </div>

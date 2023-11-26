@@ -1,9 +1,16 @@
+//Author: Emil Bero
+
+//Description: This file contains the Burial component. This component is used to display the burial page.
+
 import React from "react";
 
 const Burial = () => {
   return (
     <div>
       <div id="burial" className="max-w-[1080px] m-auto p-4 py-16">
+        <div className="mb-10">
+          {/* This is your blank space */}
+        </div>
         <h1 className="py-4 text-4xl font-bold text-center text-black">
           Green Burial
         </h1>
@@ -17,20 +24,20 @@ const Burial = () => {
         <p className="text-lg text-green-700 text-justify mt-5">
           <b>What is a Green Burial?</b>
         </p>
-        <p className="text-lg text-gray-700 text-justify mt-5">
-          Also known as natural burials, green burials are an environmentally
-          conscious alternative to traditional burial practices. During a green
-          burial, the deceased is laid to rest in a biodegradable casket,
-          shroud, or urn crafted from natural materials like wood or wicker.
-          Notably, embalming, which involves the use of toxic chemicals, is
-          omitted. These eco-friendly burials take place in specially designated
-          natural burial grounds, such as the one described here. Shallow graves
-          facilitate swift and natural decomposition, aided by microbial
-          activity and the surrounding environment.
-        </p>
 
         <div className="grid md:grid-cols-2 gap-4 w-full py-8">
           <div classname="flex flex-col mt-5">
+            <p className="text-lg text-gray-700 text-justify mt-5">
+              Also known as natural burials, green burials are an environmentally
+              conscious alternative to traditional burial practices. During a green
+              burial, the deceased is laid to rest in a biodegradable casket,
+              shroud, or urn crafted from natural materials like wood or wicker.
+              Notably, embalming, which involves the use of toxic chemicals, is
+              omitted. These eco-friendly burials take place in specially designated
+              natural burial grounds, such as the one described here. Shallow graves
+              facilitate swift and natural decomposition, aided by microbial
+              activity and the surrounding environment.
+            </p>
             <p className="text-lg text-gray-700 text-justify">
               Incorporating natural burials into the Nova Scotian landscape has
               the potential to foster partnerships between land trusts and
@@ -51,6 +58,9 @@ const Burial = () => {
             </p>
           </div>
           <div className="flex flex-col mt-1">
+            <div className="mb-5">
+              {/* This is your blank space */}
+            </div>
             {/* Image */}
             <img
               src="src/assets/burial.jpg"

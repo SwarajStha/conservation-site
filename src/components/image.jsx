@@ -1,4 +1,9 @@
-//Author: Kazi Istiak   A00452666
+//Author: Swaraj Shrestha - initial strucutre of 
+//Author: Kazi Istiak - added the image gallery and refined the structure of the page
+
+//Description: This file contains the Image component. This component is used to display image tiles.
+
+
 //This component is used to represent and display individual image tiles within the gallery. It is designed to render an image along with its associated information, such as the image name and description.
 import React, { useState } from "react";
 import PropTypes from "prop-types";

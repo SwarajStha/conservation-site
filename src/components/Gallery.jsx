@@ -1,4 +1,8 @@
-//Author: Kazi Istiak  A00452666
+//Author: Swaraj Shrestha - initial strucutre of Gallery.jsx
+//                        - structuring of the video compoenent
+//Author: Kazi Istiak     - refined structuring of the image component
+//                        - added images and buttons for 'view more' and 'view less'
+
 //This component is designed to display a collection of images and videos in a structured layout.
 //It showcases images of fauna and flora with some functionality, allowing users to load more/ less images dynamically.
 

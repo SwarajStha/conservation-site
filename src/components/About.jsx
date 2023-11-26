@@ -1,5 +1,6 @@
-// Description: This file contains the About component. This component is used to display the About page.
 // Author: Swaraj Shrestha
+
+// Description: This file contains the About component. This component is used to display the About page.
 
 import image from '../../public/images/WalkPark.jpg';
 
@@ -50,6 +51,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex flex-col">
+          {/* Image */}
           <img src={image} alt="Forest" className="w-full h-full object-cover rounded-lg" />
         </div>
       </div>
