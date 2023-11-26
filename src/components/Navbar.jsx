@@ -32,7 +32,6 @@ const Navbar = () => {
                     className="fixed w-full h-screen bg-white/90 flex
                         flex-col justify-center items-center z-20"
                 >
-                    // Navigation links
                     <a
                         href="#homepage"
                         className="w-[75%] flex justify-center items-center rounded-full shadow-lg
