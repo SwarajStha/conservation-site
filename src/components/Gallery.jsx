@@ -1,6 +1,6 @@
-//Author: Kazi Istiak
+//Author: Kazi Istiak  A00452666
 //This component is designed to display a collection of images and videos in a structured layout.
-//It showcases images of fauna and flora with some functionality, allowing users to load more images dynamically.
+//It showcases images of fauna and flora with some functionality, allowing users to load more/ less images dynamically.
 
 // Import necessary dependencies
 import React, { useState } from "react";
@@ -22,6 +22,11 @@ const Gallery = () => {
         "Mallards are dabbling ducks recognized by the male's glossy green head, white neck ring, and chestnut-brown chest. Females are mottled brown with an orange bill.",
     },
     {
+      imageName: "Lady Beetles.jpg",
+      description:
+        "Ladybugs, also known as ladybirds, are small, round beetles with bright and distinct colors, often red or orange with black spots. They are beneficial predators, feeding on aphids and other garden pests.",
+    },
+    {
       imageName: "Bronze Ground Beetle.jpg",
       description:
         "Bronze Ground Beetles are predatory beetles with a metallic bronze appearance. They are beneficial in controlling insect pests.",
@@ -35,6 +40,26 @@ const Gallery = () => {
       imageName: "White-tailed Deer.jpg",
       description:
         "White-tailed Deer are easily identified by their long, fluffy tails that are brown on top and white underneath. Bucks have antlers, and their coats vary in color",
+    },
+    {
+      imageName: "Ants.jpg",
+      description:
+        "Ants are social insects that live in colonies. They have a distinct body structure with three segments: head, thorax, and abdomen. Ants are known for their organized and cooperative behavior.",
+    },
+    {
+      imageName: "Butterfly.jpg",
+      description:
+        "A butterfly is a colorful and delicate insect with two large, often brightly colored wings covered with tiny scales. Butterflies are known for their graceful flight and are important pollinators in ecosystems.",
+    },
+    {
+      imageName: "Greglasley.jpg",
+      description:
+        "These are insects with large, multifaceted eyes, long bodies, and two pairs of strong, transparent wings. They are skilled fliers and are often found near water sources.",
+    },
+    {
+      imageName: "Grasshopper.jpg",
+      description:
+        "Grasshoppers are herbivorous insects with powerful hind legs adapted for jumping. They are often green or brown, allowing them to blend into grassy environments. Grasshoppers produce characteristic buzzing sounds.",
     },
     {
       imageName: "Common Eastern Bumble Bee.jpg",
@@ -96,6 +121,31 @@ const Gallery = () => {
         "A majestic White Spruce tree with needle-like leaves, common in northern regions. The image likely captures the tree's tall, straight trunk and branches covered in short, green needles.",
     },
     {
+      imageName: "Apple Tree.jpg",
+      description:
+        "The Apple Tree is a deciduous fruit tree producing crisp and succulent apples. Cultivated for its delicious fruit, the apple tree has cultural significance and is often associated with orchards, harvest, and the changing seasons.",
+    },
+    {
+      imageName: "Bamboo.jpg",
+      description:
+        "Bamboo is a versatile and fast-growing plant with tall, slender stems. Known for its strength and flexibility, bamboo is used in various cultures for construction, art, and as a symbol of resilience and adaptability.",
+    },
+    {
+      imageName: "Japaneese Maple.jpg",
+      description:
+        "The Japanese Maple is a deciduous tree known for its delicate and intricately lobed leaves. It displays a range of stunning colors, including red, orange, and green, making it a popular ornamental tree in gardens and landscapes.",
+    },
+    {
+      imageName: "Cherry Blossom.jpeg",
+      description:
+        "The Cherry Blossom, or Sakura, is a deciduous tree celebrated for its enchanting pink or white flowers. These blossoms create a breathtaking spectacle in spring, symbolizing renewal and the transient nature of life in Japanese culture.",
+    },
+    {
+      imageName: "Mangolia.jpg",
+      description:
+        "The Magnolia tree is characterized by its large, fragrant flowers and glossy evergreen leaves. With elegant, cup-shaped blooms, Magnolias add beauty and charm to gardens, and some species are renowned for their therapeutic properties.",
+    },
+    {
       imageName: "Wild Carrot.jpeg",
       description:
         "A close-up of the delicate and lacy flowers of Wild Carrot, also known as Queen Anne's Lace. The image may showcase the intricate, umbrella-shaped clusters of small white flowers.",
@@ -145,11 +195,6 @@ const Gallery = () => {
       description:
         "A Spruce tree, likely with its characteristic evergreen needles. Spruce trees are common in northern climates and are valued for their timber.",
     },
-    {
-      imageName: "tulip.jpeg",
-      description:
-        "A vibrant Tulip in full bloom, showcasing its cup-shaped flower and vivid color. Tulips are popular springtime flowers and come in various hues.",
-    },
   ];
 
   // Define the initial number of images to show and the increment value for Fauna
@@ -166,6 +211,14 @@ const Gallery = () => {
     setFaunaImagesToShow(faunaImagesToShow + incrementFauna);
   };
 
+  // Function to handle "Show Less" button click for Fauna
+  const handleShowLessFauna = () => {
+    setFaunaImagesToShow(initialFaunaImagesToShow);
+  };
+
+  // Function to determine if "Show More" button for Fauna should be visible
+  const isShowMoreFaunaVisible = faunaImagesToShow < faunaImagesArray.length;
+
   // Define the initial number of images to show and the increment value for Flora
   const initialFloraImagesToShow = 8;
   const incrementFlora = 4;
@@ -180,18 +233,28 @@ const Gallery = () => {
     setFloraImagesToShow(floraImagesToShow + incrementFlora);
   };
 
+  // Function to handle "Show Less" button click for Flora
+  const handleShowLessFlora = () => {
+    setFloraImagesToShow(initialFloraImagesToShow);
+  };
+
+  // Function to determine if "Show More" button for Flora should be visible
+  const isShowMoreFloraVisible = floraImagesToShow < floraImagesArray.length;
+
   return (
     <div
       id="gallery"
       className="border w-full m-auto md:pl-20 p-4 py-16 items-center"
     >
+      {/* Gallery Title */}
       <h1 className="py-4 text-4xl font-bold text-center text-black">
         GALLERY
       </h1>
+      {/* Video Component */}
       <div className="items-center">
         <Video />
       </div>
-
+      {/* Fauna Section */}
       <div>
         <h2 className="py-4 text-3xl font-bold text-center text-black">
           Fauna
@@ -205,19 +268,27 @@ const Gallery = () => {
             />
           ))}
         </div>
-
-        {faunaImagesToShow < faunaImagesArray.length && (
-          <div className="flex justify-center mt-4">
+        {/* "Show More" and "Show Less" Buttons for Fauna */}
+        <div className="flex justify-center mt-4">
+          {isShowMoreFaunaVisible && (
             <button
               className="px-4 py-2 bg-blue-500 text-white rounded-md"
               onClick={handleLoadMoreFauna}
             >
-              Load More Fauna Images
+              Show More Fauna Images
             </button>
-          </div>
-        )}
+          )}
+          {faunaImagesToShow > initialFaunaImagesToShow && (
+            <button
+              className="px-4 py-2 bg-red-500 text-white rounded-md ml-4"
+              onClick={handleShowLessFauna}
+            >
+              Show Less Fauna Images
+            </button>
+          )}
+        </div>
       </div>
-
+      {/* Flora Section */}
       <div>
         <h2 className="py-10 text-3xl font-bold text-center text-black">
           Flora
@@ -231,17 +302,25 @@ const Gallery = () => {
             />
           ))}
         </div>
-
-        {floraImagesToShow < floraImagesArray.length && (
-          <div className="flex justify-center mt-4">
+        {/* "Show More" and "Show Less" Buttons for Flora */}
+        <div className="flex justify-center mt-4">
+          {isShowMoreFloraVisible && (
             <button
               className="px-4 py-2 bg-green-500 text-white rounded-md"
               onClick={handleLoadMoreFlora}
             >
-              Load More Flora Images
+              Show More Flora Images
             </button>
-          </div>
-        )}
+          )}
+          {floraImagesToShow > initialFloraImagesToShow && (
+            <button
+              className="px-4 py-2 bg-red-500 text-white rounded-md ml-4"
+              onClick={handleShowLessFlora}
+            >
+              Show Less Flora Images
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

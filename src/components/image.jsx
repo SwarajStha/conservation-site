@@ -1,4 +1,4 @@
-//Author: Kazi Istiak
+//Author: Kazi Istiak   A00452666
 //This component is used to represent and display individual image tiles within the gallery. It is designed to render an image along with its associated information, such as the image name and description.
 import React, { useState } from "react";
 import PropTypes from "prop-types";
