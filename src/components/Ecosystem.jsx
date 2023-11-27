@@ -1,3 +1,7 @@
+//Author: Eric Wall
+
+//Description: This file contains the Ecosystem component. This component is used to display the ecosystem page.
+
 const Ecosystem = () => {
     return (
         <div id="ecosystem" className="max-w-[1080px] m-auto p-4 py-16">

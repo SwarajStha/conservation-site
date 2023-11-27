@@ -17,31 +17,31 @@ const Socials = () => {
                 <div className='flex flex-row'>
 
                     {/* Facebook icon */}
-                    <a href="#homepage" className='rounded-full shadow-lg 
+                    <a href="https://www.facebook.com/" className='rounded-full shadow-lg 
                         bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <FaFacebook size={30} />
                     </a>
 
-                    {/* Twitter icon */}
-                    <a href="#gallery" className='rounded-full shadow-lg 
+                    {/* X icon */}
+                    <a href="https://twitter.com/" className='rounded-full shadow-lg 
                         bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <FaXTwitter size={30} />
                     </a>
 
                     {/* Instagram icon */}
-                    <a href="#burial" className='rounded-full shadow-lg 
+                    <a href="https://www.instagram.com/" className='rounded-full shadow-lg 
                         bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <AiOutlineInstagram size={30} />
                     </a>
 
                     {/* Pinterest icon */}
-                    <a href="#ecosystem" className='rounded-full shadow-lg 
+                    <a href="https://www.pinterest.ca/" className='rounded-full shadow-lg 
                         bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <BiLogoPinterestAlt size={30} />
                     </a>
 
                     {/* Youtube icon */}
-                    <a href="#about" className='rounded-full shadow-lg 
+                    <a href="https://www.youtube.com/" className='rounded-full shadow-lg 
                         bg-gray-100 shadow-gray-400 m-2 p-2 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <BiLogoYoutube size={30} />
                     </a>
