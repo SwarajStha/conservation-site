@@ -63,7 +63,7 @@ const Burial = () => {
             </div>
             {/* Image */}
             <img
-              src="src/assets/burial.jpg"
+              src="images/burial.jpg"
               alt="picture of burial"
               className="w-auto h-auto object-cover rounded-lg"
             />

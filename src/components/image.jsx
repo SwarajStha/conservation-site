@@ -1,4 +1,4 @@
-//Author: Swaraj Shrestha - initial strucutre of 
+//Author: Swaraj Shrestha - initial strucutre
 //Author: Kazi Istiak - added the image gallery and refined the structure of the page
 
 //Description: This file contains the Image component. This component is used to display image tiles.

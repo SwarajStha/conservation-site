@@ -1,3 +1,5 @@
+// Author: Swaraj Shrestha
+
 import Navbar from "./components/Navbar.jsx";
 import Homepage from "./components/Homepage.jsx";
 import Gallery from "./components/Gallery.jsx"

@@ -10,7 +10,7 @@ const Homepage = () => {
         // Container for the homepage content
         <div id='homepage'>
             <img className='w-full h-screen object-cover object-left scale'
-                src="/AI_woods(I).jpg" alt="Image location moved" />
+                src="images/AI_woods(I).jpg" alt="Image location moved" />
 
             <div className='w-full h-screen absolute top-0 left-0 bg-white/10'>
                 <div className='max-w-[720px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>

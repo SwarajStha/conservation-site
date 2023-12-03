@@ -2,8 +2,6 @@
 
 // Description: This file contains the About component. This component is used to display the About page.
 
-import image from '../../public/images/WalkPark.jpg';
-
 // About component definition
 const About = () => {
   return (
@@ -52,7 +50,7 @@ const About = () => {
         </div>
         <div className="flex flex-col">
           {/* Image */}
-          <img src={image} alt="Forest" className="w-full h-full object-cover rounded-lg" />
+          <img src="images/WalkPark.jpg" alt="Forest" className="w-full h-full object-cover rounded-lg" />
         </div>
       </div>
     </div>

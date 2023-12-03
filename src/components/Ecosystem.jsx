@@ -17,7 +17,7 @@ const Ecosystem = () => {
                     </p>
                     <div className="aspect-w-1 aspect-h-1">
                         <img
-                            src="src/assets/outlooktrail.jpg"
+                            src="images/outlooktrail.jpg"
                             alt="picture of burial"
                             className="w-full h-full object-cover rounded-lg"
                         />
@@ -43,7 +43,7 @@ const Ecosystem = () => {
                     </p>
                     <div className="aspect-w-1 aspect-h-1">
                         <img
-                            src="src/assets/foresttrees.jpg"
+                            src="images/foresttrees.jpg"
                             alt="picture of burial"
                             className="w-full h-full object-cover rounded-lg"
                         />

@@ -1,5 +1,5 @@
 //Author: Swaraj Shrestha - initial strucutre of Gallery.jsx
-//                        - structuring of the video compoenent
+//                        - structuring of the video component
 //Author: Kazi Istiak     - refined structuring of the image component
 //                        - added array with images and descriptions
 //                        - added images and buttons for 'view more' and 'view less'
