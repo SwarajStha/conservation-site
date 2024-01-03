@@ -26,7 +26,7 @@ const Burial = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-4 w-full py-8">
-          <div classname="flex flex-col mt-5">
+          <div className="flex flex-col mt-5">
             <p className="text-lg text-gray-700 text-justify mt-5">
               Also known as natural burials, green burials are an environmentally
               conscious alternative to traditional burial practices. During a green
